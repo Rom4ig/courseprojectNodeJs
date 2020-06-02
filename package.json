@@ -1,0 +1,52 @@
+{
+  "name": "courseproject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js",
+    "gulp": "gulp",
+    "dev": "nodemon app.js"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-node": "^11.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.1.0",
+    "install": "^0.13.0",
+    "npm": "^6.14.4"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.19.0",
+    "connect-mongo": "^3.2.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "faker": "^4.1.0",
+    "fs-extra": "^9.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglifyjs": "^0.6.2",
+    "jquery": "^3.5.0",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.25.1",
+    "mongoose": "^5.9.10",
+    "mongoose-autopopulate": "^0.12.2",
+    "mongoose-url-slugs": "^1.0.2",
+    "multer": "^1.4.2",
+    "sharp": "^0.25.2",
+    "showdown": "^1.9.1",
+    "static-asset": "^0.6.0",
+    "transliter": "^2.2.1",
+    "turndown": "^6.0.0",
+    "ws": "^7.3.0"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemaPOST",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "name",
+    "job",
+    "id",
+    "createdAt"
+  ],
+  "properties": {
+    "name": {
+      "$id": "#/properties/name",
+      "allOf": [
+        {
+          "type": "string"
+        },
+        {
+          "maxLength": 5
+        }
+      ],
+      "title": "The name schema",
+      "pattern": "^(.*)$"
+    },
+    "job": {
+      "$id": "#/properties/job",
+      "type": "string",
+      "title": "The job schema",
+      "pattern": "^(.*)$"
+    },
+    "id": {
+      "$id": "#/properties/id",
+      "type": "string",
+      "title": "The id schema",
+      "pattern": "^([0-9]*)$"
+    },
+    "createdAt": {
+      "$id": "#/properties/createAt",
+      "title": "The createAt schema",
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemaGET",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "page",
+    "per_page",
+    "total",
+    "total_pages",
+    "data"
+  ],
+  "properties": {
+    "page": {
+      "$id": "#/properties/page",
+      "type": "integer",
+      "title": "The Page Schema"
+    },
+    "per_page": {
+      "$id": "#/properties/per_page",
+      "type": "integer",
+      "title": "The Per_page Schema"
+    },
+    "total": {
+      "$id": "#/properties/total",
+      "type": "integer",
+      "title": "The Total Schema"
+    },
+    "total_pages": {
+      "$id": "#/properties/total_pages",
+      "type": "integer",
+      "title": "The Total_pages Schema"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "array",
+      "title": "The Data Schema",
+      "items": {
+        "$id": "#/properties/data/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "id",
+          "name",
+          "year",
+          "color",
+          "pantone_value"
+        ],
+        "properties": {
+          "id": {
+            "$id": "#/properties/data/items/properties/id",
+            "type": "integer",
+            "title": "The Id Schema"
+          },
+          "name": {
+            "$id": "#/properties/data/items/properties/email",
+            "type": "string",
+            "title": "The name Schema",
+            "pattern": "^(.*)$"
+          },
+          "year": {
+            "$id": "#/properties/data/items/properties/first_name",
+            "type": "integer",
+            "title": "The year Schema"
+          },
+          "color": {
+            "$id": "#/properties/data/items/properties/last_name",
+            "type": "string",
+            "title": "The Last_name Schema",
+            "pattern": "^#(.*)$"
+          },
+          "pantone_value": {
+            "$id": "#/properties/data/items/properties/avatar",
+            "title": "The Avatar Schema",
+            "type": "string",
+            "pattern": "^([0-9]{2}-[0-9]{4})$"
+          }
+        }
+      }
+    }
+  }
+}

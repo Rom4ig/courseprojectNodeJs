@@ -1,0 +1,33 @@
+{
+  "name": "apitest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rom4ig/APItest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rom4ig/APItest/issues"
+  },
+  "homepage": "https://github.com/Rom4ig/APItest#readme",
+  "dependencies": {
+    "ajv": "^6.11.0",
+    "allure-commandline": "^2.13.0",
+    "axios": "^0.19.2",
+    "chance": "^1.1.5",
+    "https": "^1.0.0",
+    "jest": "^25.1.0",
+    "jest-allure": "^0.1.1",
+    "jest-junit": "^10.0.0",
+    "log4js": "^6.1.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0"
+  }
+}

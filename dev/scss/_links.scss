@@ -1,0 +1,16 @@
+a,
+.link,
+.a {
+  color: $primaryColor;
+  text-decoration: none;
+  cursor: pointer;
+  padding-right: 10px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.links{
+  display: flex;
+  flex-direction: row;
+}

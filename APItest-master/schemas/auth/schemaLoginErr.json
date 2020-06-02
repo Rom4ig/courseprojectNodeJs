@@ -1,0 +1,29 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemaLoginErr",
+  "type": "object",
+  "title": "Login error",
+  "required": [
+    "ok",
+    "error",
+    "fields"
+  ],
+  "properties": {
+    "ok": {
+      "$id": "#/properties/ok",
+      "type": "boolean",
+      "title": "Status"
+    },
+    "error": {
+      "$id": "#/properties/error",
+      "type": "string",
+      "title": "Error message"
+    },
+    "fields": {
+      "$id": "#/properties/fields",
+      "type": "array",
+      "title": "Error fields"
+    }
+  }
+}

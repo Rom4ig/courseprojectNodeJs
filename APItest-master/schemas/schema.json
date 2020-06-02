@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://mynet.com/schemas/schema.json#",
+  "type": "object",
+  "properties": {
+    "billing_address": { "$ref": "definitions.json#address"},
+    "shipping_address": {
+      "allOf": [
+        { "$ref": "definitions.json#address"},
+        { "properties":
+        { "type": { "enum": [ "residential", "business" ] } },
+          "required": ["type"]
+        }
+      ]
+    }
+  }
+}

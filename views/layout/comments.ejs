@@ -1,0 +1,37 @@
+<% if (items.length) { %>
+<ul>
+    <% } %>
+
+    <% items.forEach(function(item){ %>
+        <li id="<%= item.id %>">
+            <div class="head">
+                <a href="/users/<%= item.owner.login %>"><%= item.owner.login %></a>
+                <span class="date">
+                    <% if(item.createdAt < item.updatedAt){ %>
+                        Обновлено
+                    <% } %>
+                    <%= moment(item.updatedAt).fromNow() %>
+              </span>
+            </div>
+            <% if(item.body !== '<b>Комментарий удален пользователем</b>'){ %>
+                <%= item.body %>
+            <% }else{ %>
+                <%- item.body %>
+            <% } %>
+            <div class="links">
+                <% if (user && item.body !== '<b>Комментарий удален пользователем</b>') { %>
+                    <span class="link reply">ответить</span>
+                <% } %>
+                <% if (item.owner.login === user && item.body !== '<b>Комментарий удален пользователем</b>') { %>
+                    <span class="link delete">удалить</span>
+                    <span class="link edit">отредактировать</span>
+                <% } %>
+            </div>
+
+            <%- include('./comments.ejs', {items: item.children}) %>
+        </li>
+    <% }) %>
+
+    <% if (items.length) { %>
+</ul>
+<% } %>

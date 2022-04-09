@@ -37,7 +37,7 @@
     "gulp-uglifyjs": "^0.6.2",
     "jquery": "^3.5.0",
     "mkdirp": "^0.5.1",
-    "moment": "^2.25.1",
+    "moment": "^2.29.2",
     "mongoose": "^5.9.10",
     "mongoose-autopopulate": "^0.12.2",
     "mongoose-url-slugs": "^1.0.2",
